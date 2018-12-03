@@ -1,6 +1,6 @@
 import React from "react";
 import MovieCard from "./MovieCard";
-
+import LoaderHOC from './LoaderHOC.jsx'
 const MovieList = ({ movielist= [], onAddMovie = () => {}}) =>
 
   <div className='mvlist'>
@@ -22,6 +22,6 @@ const MovieList = ({ movielist= [], onAddMovie = () => {}}) =>
       </div>
   </div>
 
-export default MovieList;
+export default LoaderHOC(MovieList);
 
  
